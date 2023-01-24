@@ -26,10 +26,11 @@ class MultiplyByTenStream extends Writable {
   }
 }
 
-class NegativeNumber extends Transform {
+class NegativeNumberStream extends Transform {
   _transform(chunk, encoding, callback) {
     const num = parseInt(chunk.toString());
-    const buf = Buffer.from((-num).toString());
+    const transformed = -num;
+    const buf = Buffer.from(transformed.toString());
     callback(null, buf);
   }
 }
@@ -39,5 +40,5 @@ class NegativeNumber extends Transform {
 // new OneToHundredStream().pipe(new MultiplyByTenStream());
 
 new OneToHundredStream()
-  .pipe(new NegativeNumber())
+  .pipe(new NegativeNumberStream())
   .pipe(new MultiplyByTenStream());
