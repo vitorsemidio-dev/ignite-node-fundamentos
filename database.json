@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "b8fd4b18-5faf-40f8-8af6-e7cc577c22b0",
+      "name": "John Doe",
+      "email": "johndoe@example.com"
+    },
+    {
+      "id": "9d22cea8-9e69-4898-b13a-7253c3e0aa28",
+      "name": "Jane Doe",
+      "email": "janedoe@example.com"
+    },
+    {
+      "id": "821946f2-f148-4859-a26d-1cca8198446d",
+      "name": "Mia Doe",
+      "email": "miadoe@example.com"
+    }
+  ]
+}
