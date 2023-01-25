@@ -28,8 +28,18 @@ export class Database {
     this.#persist();
   }
 
-  select(table) {
-    return this.#database[table] ?? [];
+  select(table, search) {
+    const data = this.#database[table] ?? [];
+
+    if (search) {
+      return data.filter((row) => {
+        return Object.entries(search).some(([key, value]) => {
+          return row[key].includes(value);
+        });
+      });
+    }
+
+    return data;
   }
 
   delete(table, id) {
