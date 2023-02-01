@@ -1,0 +1,177 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-02-01T02:01:43.818Z",
+  "__export_source": "insomnia.desktop.app:v2022.7.5",
+  "resources": [
+    {
+      "_id": "req_f8b790eff26543029a7398d0d81ce09a",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1675216683767,
+      "created": 1674608620413,
+      "url": "{{ _.base_url }}/users",
+      "name": "List Users",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_27c028db9b5643e39082edb9dd041294",
+          "name": "search",
+          "value": "john",
+          "description": "",
+          "disabled": true
+        },
+        {
+          "id": "pair_faf13735cc0c4c5da3d59762488f0a57",
+          "name": "search",
+          "value": "mia",
+          "description": "",
+          "disabled": true
+        },
+        {
+          "id": "pair_ecec7030f3e842afbf54713046722f9d",
+          "name": "search",
+          "value": "jane",
+          "description": "",
+          "disabled": true
+        },
+        {
+          "id": "pair_9cccd0c761dc4c67a85024a71a72dd9c",
+          "name": "search",
+          "value": "Emidio",
+          "description": "",
+          "disabled": true
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1674608620413,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_93c408585c284e83ac381c6f013300c7",
+      "parentId": null,
+      "modified": 1674608595229,
+      "created": 1674608595229,
+      "name": "Ignite Node - Fundamentos",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_13964f6038014278b8bbc693f2c9a8ac",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1675216596502,
+      "created": 1675213793189,
+      "url": "{{ _.base_url }}/users",
+      "name": "Create User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Emidio\",\n\t\"email\": \"emidio@email.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1674593811252.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1558bfc939624301ab78a359a1524de4",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1675216750468,
+      "created": 1675213798771,
+      "url": "{{ _.base_url }}/users/b8fd4b18-5faf-40f8-8af6-e7cc577c22b0",
+      "name": "Update User",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Emidio Dev\",\n\t\"email\": \"emidio-dev@email.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1674586406672.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_51e8cd3120044af8ab90df2ce86c52f6",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1675216756874,
+      "created": 1675213803008,
+      "url": "{{ _.base_url }}/users/b8fd4b18-5faf-40f8-8af6-e7cc577c22b0",
+      "name": "Delete User",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1674582704382.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_39fbb380e638f67c0e8367a2282ae1198e99e210",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1674608732101,
+      "created": 1674608595231,
+      "name": "Base Environment",
+      "data": { "base_url": "http://localhost:3333" },
+      "dataPropertyOrder": { "&": ["base_url"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1674608595231,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_39fbb380e638f67c0e8367a2282ae1198e99e210",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1674608595232,
+      "created": 1674608595232,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_5afeb52cc0e44981b9dbd7368a255b6e",
+      "parentId": "wrk_93c408585c284e83ac381c6f013300c7",
+      "modified": 1674608595229,
+      "created": 1674608595229,
+      "fileName": "Ignite Node - Fundamentos",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
